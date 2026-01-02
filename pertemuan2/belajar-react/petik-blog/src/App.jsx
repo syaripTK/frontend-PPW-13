@@ -1,35 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * Component adalah tampilan UI yan terdiri dari element dan logika
+ * Element adalah bagian paling kecil dari component
+ *
+ *
+ * Component di dalam react adalah sebuah function yang mengembalikan nilai berupa jsx dan logic
+ *
+ * Component harus dibuat dengan awalan huruf kapital, ex: App, Header
+ *
+ * Di bawah ini merupakan contoh dari component yaitu function App()
+ * yang mengembalikan element H1 dan element ol-li
+ */
+
+import { Component } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Kampang Chaonima </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <h1>To-do List</h1>
+      <ol>
+        <li>Mengerjakan tugas fron end</li>
+        <li>Mempelajari tutorial react JS</li>
+        <li>Muroja'ah</li>
+      </ol>
+      <img src="https://picsum.photos/200/308" alt="Gambar" />
+      <Footer nama="Kosasih" />
     </>
-  )
+  );
 }
+// Cara Pertama(disarankan) adalah membuat component dengan function
+// function Header() {
+//   return (
+//     <nav>
+//       <ul>
+//         <li>Home</li>
+//         <li>About</li>
+//         <li>Login</li>
+//       </ul>
+//     </nav>
+//   );
+// }
 
-export default App
+// Cara kedua(tidak disarankan) adalah membuat component dengan menggunakan class
+// class Footer extends Component {
+//   render() {
+//     return (
+//       <footer>
+//         <h3>Copyright &copy;2026 Developed by Ahmad Syangkan Syarip</h3>
+//         <span>Make with &#10084;</span>
+//       </footer>
+//     );
+//   }
+// }
+
+export default App;
