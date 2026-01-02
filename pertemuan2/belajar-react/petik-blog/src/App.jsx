@@ -14,20 +14,33 @@
 import { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-
+import Profile from "./Profile";
+import Customer from "./Customer";
+import { member } from "./data.js";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <h1>To-do List</h1>
       <ol>
         <li>Mengerjakan tugas fron end</li>
         <li>Mempelajari tutorial react JS</li>
         <li>Muroja'ah</li>
-      </ol>
+      </ol> */}
+      {/* Untuk penulisan props di dalam app bisa menggunakan string atau langsung {}, atau {""}*/}
+
+      {/* <Profile nama="Jajang" umur={30} alamat={"Bandung"} /> */}
+
+      {/* Karena componet itu reuasble maka kita bebas memanggilnya beberapa kali */}
+
+      {/* <Profile nama="Kohar" umur={18} alamat={"Fakfak Baubau"} />
+
       <img src="https://picsum.photos/200/308" alt="Gambar" />
-      <Footer nama="Kosasih" />
+      <Footer nama="Kosasih" /> */}
+      <Customer nama="Ucup" alamat={"Depok"} membership={member.pr}/>
+      <Customer nama="Asih" alamat={"Fakfak"} membership={member.g}/>
+      <Customer nama="Mr Pudidi" alamat={"Cianjur"} membership={member.pl}/>
     </>
   );
 }
