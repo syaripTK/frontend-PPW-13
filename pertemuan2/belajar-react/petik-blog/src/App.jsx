@@ -12,13 +12,17 @@
  */
 
 import { Component } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Profile from "./Profile";
-import Customer from "./Customer";
-import { member } from "./data.js";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Profile from "./components/Header/Profile/Profile.jsx";
+import Customer from "./components/Customer/Customer.jsx";
+import { member } from "./components/module/data.js";
 
 function App() {
+  const a = 10;
+  const b = 5;
+  console.info(a + b);
+
   return (
     <>
       {/* <Header />
@@ -38,9 +42,9 @@ function App() {
 
       <img src="https://picsum.photos/200/308" alt="Gambar" />
       <Footer nama="Kosasih" /> */}
-      <Customer nama="Ucup" alamat={"Depok"} membership={member.pr}/>
-      <Customer nama="Asih" alamat={"Fakfak"} membership={member.g}/>
-      <Customer nama="Mr Pudidi" alamat={"Cianjur"} membership={member.pl}/>
+      <Customer nama="Ucup" alamat={"Depok"} membership={member.pr} />
+      <Customer nama="Asih" alamat={"Fakfak"} membership={member.g} />
+      <Customer nama="Mr Pudidi" alamat={"Cianjur"} membership={member.pl} />
     </>
   );
 }
