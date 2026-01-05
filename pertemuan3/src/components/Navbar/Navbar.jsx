@@ -1,10 +1,18 @@
+import "./Navbar.css";
+
 function Navbar() {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Login</li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Login</a>
+        </li>
       </ul>
     </nav>
   );

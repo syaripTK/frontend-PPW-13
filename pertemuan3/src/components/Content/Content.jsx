@@ -1,15 +1,34 @@
+import "./Content.css";
+
 function Content({ nama, membership }) {
+  // const tableStyle = {
+  //   border: "1px solid black",
+  //   width: "300px",
+  //   margin: "30px auto",
+  // };
+
+  // const headerStyle = {
+  //   textAlign: "center",
+  //   fontWeight: "bold",
+  // };
+
+  // const cellStyle = {
+  //   textAlign: "center",
+  // };
+
   return (
     <div>
-      <table border={1}>
-        <thead>
+      <table className="card">
+        <thead className="card-head">
           <tr>
             <td colSpan={2}>{nama}</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="card-body">
           <tr>
-            <td colSpan={2}>{membership}</td>
+            <td colSpan={2} className="member">
+              {membership}
+            </td>
           </tr>
           <tr>
             <td>
@@ -21,6 +40,7 @@ function Content({ nama, membership }) {
           </tr>
         </tbody>
       </table>
+      
     </div>
   );
 }

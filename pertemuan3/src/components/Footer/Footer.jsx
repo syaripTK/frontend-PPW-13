@@ -1,12 +1,13 @@
+import "./Footer.css";
+
 function Footer({ nama }) {
   return (
-    <div>
+    <footer className="footer">
       <h3>
-        Copyright &copy; {new Date().getFullYear()} Developed by
-        {nama ? nama : " Ahmad Syangkan Syarip"}
+        Copyright &copy; {new Date().getFullYear()} Developed by {nama ? nama : " Ahmad Syangkan Syarip"}
       </h3>
       <span>Make with &#10084;</span>
-    </div>
+    </footer>
   );
 }
 

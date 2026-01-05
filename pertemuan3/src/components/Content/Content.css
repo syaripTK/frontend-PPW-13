@@ -1,0 +1,116 @@
+.card {
+  background-color: #f9fafb;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+card-body {
+  text-align: center;
+}
+
+.member {
+  color: #717171;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #f8f9fa;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.cardo {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 60px 30px;
+  border: 1.5px solid #e5e2e2;
+  padding: 0;
+}
+
+.cardo.featured {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 60px 30px;
+  border: 1.5px solid #e5e2e2;
+  padding: 0;
+}
+
+.gold-header {
+  background: #007bff;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: #f8f9fa;
+}
+
+.cardo-header {
+  background: #303030;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: #f8f9fa;
+}
+
+.price {
+  display: flex;
+  gap: 4px;
+}
+.price h2 {
+  margin: 0;
+}
+
+.price span {
+  margin-top: 5px;
+}
+
+.cardo-boady {
+  text-align: center;
+}
+
+.cardo-boady ul {
+  list-style: none;
+
+  display: block;
+  text-align: left;
+}
+
+.cardo-boady ul li {
+  margin-bottom: 10px;
+}
+
+.cardo-boady ul li:last-child {
+  margin-bottom: 30px;
+}
+.ordinary-btn {
+  border-radius: 99px;
+  background-color: #dcedf7;
+  color: #007bff;
+  margin-bottom: 20px;
+  width: 45vw;
+}
+
+.gold-btn {
+  border-radius: 99px;
+  background-color: #007bff;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 45vw;
+}
+
+.ordinary-btn:hover{
+    background-color: #007bff;
+    color: #fff;
+}
