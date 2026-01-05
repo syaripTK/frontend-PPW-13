@@ -18,13 +18,13 @@ function Content({ nama, membership }) {
 
   return (
     <div>
-      <table className="card">
+      <table className="table">
         <thead className="card-head">
           <tr>
             <td colSpan={2}>{nama}</td>
           </tr>
         </thead>
-        <tbody className="card-body">
+        <tbody className="table-body">
           <tr>
             <td colSpan={2} className="member">
               {membership}
