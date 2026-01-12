@@ -1,4 +1,12 @@
-.container{
-    display: flex;
-    flex-direction: column;
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Layar Desktop */
+@media (min-width: 768px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -13,7 +13,7 @@ function App() {
       <Content nama="Bambang" membership="Platinum" />
       <Content nama="Budi" membership="Silver" />
       <h3>Yuk Berlangganan Membership</h3>
-      <div className="container">
+      <div className="card-wrapper">
         {/* <Card />
         <Card member={"Gold"} price={150000} isGold />
         <Card member={"Platinum"} price={250000} /> */}
@@ -32,8 +32,7 @@ function App() {
           benefit2="Bisa melihat katalog dan update terbaru"
           benefit3="Akses dasar ke fitur utama"
           benefit4="Dukungan Komunitas"
-                    isPopular={true}
-
+          isPopular={true}
         />
         <Card
           price={200000}
